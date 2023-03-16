@@ -17,6 +17,7 @@ function Register() {
   let [uconpassword, setUconpassword] = useState("");
   let [usecurityQues, setUsecurityQues] = useState("");
   let [usecurityAns, setUsecurityAns] = useState("");
+  let [urole, setUrole] = useState("");
 
   let unameinp = (e) => setUname(e.target.value);
   let ucityinp = (e) => setUcity(e.target.value);
@@ -26,6 +27,7 @@ function Register() {
   let uconpasswordinp = (e) => setUconpassword(e.target.value);
   let usecurityquesinp = (e) => setUsecurityQues(e.target.value);
   let usecurityansinp = (e) => setUsecurityAns(e.target.value);
+  let uroleinp = (e) => setUrole(e.target.value);
 
   let user = {
     name: uname,
@@ -36,6 +38,7 @@ function Register() {
     conpassword: uconpassword,
     securityQues: usecurityQues,
     securityAns: usecurityAns,
+    role: urole,
   };
 
   //Register Data
@@ -78,6 +81,7 @@ function Register() {
             icon: "error",
             title: "Oh no!!!",
             text: "Email is Already Registered",
+            background: "black",
           });
         }
       },
@@ -87,6 +91,7 @@ function Register() {
           icon: "error",
           title: "Oh no!",
           text: "Server is down",
+          background: "black",
         });
       }
     );
@@ -101,6 +106,7 @@ function Register() {
   let [esecurityQues, setEsecurityQues] = useState();
   let [esecurityAns, setEsecurityAns] = useState();
   let [etnc, setEtnc] = useState();
+  let [erole, setErole] = useState();
 
   function clearErrors() {
     document.getElementById("name").classList.remove("is-invalid");
@@ -129,6 +135,9 @@ function Register() {
 
     document.getElementById("tnc").classList.remove("is-invalid");
     setEtnc("");
+
+    document.getElementById("is_admin").classList.remove("is-invalid");
+    setErole("");
   }
 
   function clearFields() {
@@ -140,6 +149,7 @@ function Register() {
     setUconpassword("");
     setUsecurityQues("");
     setUsecurityAns("");
+    setUrole("");
     document.getElementById("tnc").checked = false;
   }
 
@@ -152,7 +162,8 @@ function Register() {
       upassword.trim() === "" ||
       uconpassword.trim === "" ||
       usecurityQues.trim() === "" ||
-      usecurityAns.trim() === ""
+      usecurityAns.trim() === "" ||
+      urole.trim() === ""
     ) {
       swal.fire("All fields Are Required");
     } else if (
@@ -370,7 +381,25 @@ function Register() {
                 />
                 <div class="invalid-feedback fs-6 fw-bold">{esecurityAns}</div>
               </div>
-
+              <div className="col-md-6">
+                <label for="role" className="form-label fs-5">
+                  Register As
+                </label>
+                <select
+                  id="role"
+                  className="form-select"
+                  name="role"
+                  onChange={uroleinp}
+                  onFocus={clearErrors}
+                  value={urole}
+                  required
+                >
+                  <option value=""></option>
+                  <option value="USER">USER</option>
+                  <option value="ADMIN">ADMIN</option>
+                </select>
+                <div class="invalid-feedback fs-6 fw-bold">{erole}</div>
+              </div>
               <div className="col-md-7 text-right mt-3">
                 <input
                   type="checkbox"

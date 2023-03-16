@@ -27,6 +27,7 @@ const Donations = () => {
             text: "There are no donations",
             icon: "error",
             button: "Ok",
+            background: "black",
           });
         }
         setRequests(response.data);
@@ -37,6 +38,7 @@ const Donations = () => {
           icon: "error",
           title: "Oh no!",
           text: "Server is down",
+          background: "black",
         });
       }
     );

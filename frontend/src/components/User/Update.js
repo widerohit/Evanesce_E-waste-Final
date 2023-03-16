@@ -60,6 +60,7 @@ const Update = () => {
             title: `Updated Successfully`,
             text: "Please Upload Image Once Again !",
             icon: "success",
+            background: "black",
           })
           .then(function () {
             sessionStorage.removeItem("reqid");
@@ -72,6 +73,7 @@ const Update = () => {
           icon: "error",
           title: "Oh no!",
           text: "Server is down",
+          background: "black",
         });
       }
     );

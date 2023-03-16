@@ -65,6 +65,7 @@ function Forget() {
             title: "Oh NO!",
             text: "Your Answer Does Not Match The One You Entered During Registration",
             icon: "error",
+            background: "black",
           });
           document.getElementById("securityAns").value = "";
           document.getElementById("password").value = "";
@@ -78,6 +79,7 @@ function Forget() {
               icon: "success",
               title: "Finally!!!",
               text: "You Have Reset The Password Successfully.Keep It Safe And Remember It For Login",
+              background: "black",
             })
             .then(function () {
               window.location = "/";

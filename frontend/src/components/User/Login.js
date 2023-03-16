@@ -28,9 +28,10 @@ function Login() {
             icon: "error",
             title: "Oops...",
             text: "Wrong Credentials Entered or You Have Not Registered Yet.",
+            background: "black",
           });
         } else {
-          if (response.data[0].admin === true) {
+          if (response.data[0].role === "ADMIN") {
             window.location = "/admin";
             sessionStorage.setItem("admin", "admin");
           } else {
@@ -54,6 +55,7 @@ function Login() {
           icon: "error",
           title: "Oh No!",
           text: "Server is Down",
+          background: "black",
         });
       }
     );

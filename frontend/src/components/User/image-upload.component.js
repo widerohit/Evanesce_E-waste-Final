@@ -45,6 +45,7 @@ export default function App({ reqdetails }) {
                 icon: "success",
                 title: "Hurreh!!!",
                 text: "Image Uploaded",
+                background: "black",
               })
               .then(function () {
                 // window.location = "/view";
@@ -61,6 +62,7 @@ export default function App({ reqdetails }) {
               icon: "error",
               title: "Image Uploading",
               text: "File Could'nt not Uploaded",
+              background: "black",
             });
           }
         );

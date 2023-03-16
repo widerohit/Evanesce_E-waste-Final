@@ -29,7 +29,7 @@ public class User {
 	private String phone;
 	private String securityQues;
 	private String securityAns;
-	private boolean isAdmin=false;
+	private String role;
 	
     @OneToMany(mappedBy = "email", cascade = CascadeType.ALL)
     private List<Request> request ;

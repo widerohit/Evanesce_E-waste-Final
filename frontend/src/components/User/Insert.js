@@ -42,7 +42,10 @@ const Insert = () => {
           .fire({
             icon: "success",
             title: "Congratulations",
+
             text: "You are contributing to a great cause.We will contact you soon via email or phone number provided for collection.",
+
+            background: "black",
           })
           .then(function () {
             window.location = "/view";
@@ -56,6 +59,7 @@ const Insert = () => {
           icon: "error",
           title: "Oh no!",
           text: "Server is Down",
+          background: "black",
         });
       }
     );
@@ -115,18 +119,29 @@ const Insert = () => {
       clearFields();
     }
   };
+
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
-    <div>
+    <div style={divStyle}>
       <div id="now" className="mt-5 p-2">
-        <form className="row g-3 w-50 m-auto p-5 fs-5 log">
+        <form className="bg-dark row g-3 w-50 m-auto p-5 fs-5 log">
           <div className="col-md-12 mb-3 ">
             <label for="name" className="form-label fs-10">
-              Name :-
+              Name :- &nbsp;
             </label>
             <input
-              style={{ border: "0px none" }}
               type="text"
-              className=" bg-light fs-10 fw-bold "
+              style={{ border: "0px none" }}
+              className=" bg-dark text-white fs-10 fw-bold "
               id="name"
               name="name"
               value={uname}
@@ -134,12 +149,12 @@ const Insert = () => {
             />
             <br></br>
             <label for="email" className="form-label fs-10">
-              Email :-
+              Email :- &nbsp;
             </label>
             <input
               type="email"
               style={{ border: "0px none" }}
-              className="bg-light fs-10 fw-bold "
+              className="bg-dark text-white fs-10 fw-bold "
               id="email"
               name="email"
               value={uemail}
