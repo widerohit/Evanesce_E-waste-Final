@@ -1,11 +1,20 @@
 import React from "react";
-import "../../css/home.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
-    <div>
-      <footer class="bg-a2f4a2 text-dark pt-5 pb-4">
+    <div style={divStyle}>
+      <footer class="text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
           <div class="row text-center text-md-left">
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -25,7 +34,7 @@ function Footer() {
                 <a
                   href="/home"
                   style={{ "text-decoration": "none" }}
-                  class="text-dark"
+                  class="text-white"
                 >
                   E-Waste Management
                 </a>
@@ -34,7 +43,7 @@ function Footer() {
                 <a
                   href="/home"
                   style={{ "text-decoration": "none" }}
-                  class="text-dark"
+                  class="text-white"
                 >
                   E-Waste Recycling
                 </a>
@@ -48,7 +57,7 @@ function Footer() {
                 <Link
                   to="/home"
                   style={{ "text-decoration": "none" }}
-                  class="text-dark"
+                  class="text-white"
                 >
                   HOME
                 </Link>
@@ -57,7 +66,7 @@ function Footer() {
                 <Link
                   to="/donate"
                   style={{ "text-decoration": "none" }}
-                  class="text-dark"
+                  class="text-white"
                 >
                   DONATE
                 </Link>
@@ -66,7 +75,7 @@ function Footer() {
                 <Link
                   to="/view"
                   style={{ "text-decoration": "none" }}
-                  class="text-dark"
+                  class="text-white"
                 >
                   VIEW DONATION
                 </Link>
@@ -75,7 +84,7 @@ function Footer() {
                 <Link
                   to="/profile"
                   style={{ "text-decoration": "none" }}
-                  class="text-dark"
+                  class="text-white"
                 >
                   PROFILE
                 </Link>

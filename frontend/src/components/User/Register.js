@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../../css/register.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert2";
 import base_url from "../../api/bootapi.js";
@@ -201,17 +200,26 @@ function Register() {
       checkEmail(user);
     }
   };
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
 
   return (
-    <div className="hire-form">
+    <div style={divStyle}>
       <div>
         <div>
           <div className="m-auto w-50 pt-2 ps-5 pe-5 pb-2  ">
-            <h1 className="text-center fw-bold mb-6" style={{ color: "green" }}>
+            <h1 className="text-center fw-bold mb-6">
               Evanesce E-Waste Register
             </h1>
 
-            <form style={{ color: "black" }} className="row g-3 mt-1">
+            <form className="row g-3 mt-1">
               <div className="col-md-6">
                 <label for="name" className="form-label fs-5">
                   Name

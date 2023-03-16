@@ -24,8 +24,18 @@ function Home() {
       window.location = "/";
     }
   }, []);
+
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
   return (
-    <div>
+    <div style={divStyle}>
       <div>
         <Carousel>
           <Carousel.Item interval={5000}>
@@ -47,7 +57,7 @@ function Home() {
       </div>
 
       <div style={{ "text-align": "center" }}>
-        <Link to="/aboutus" class="btn btn-info text-dark btn-lg mt-5">
+        <Link to="/aboutus" class="btn btn-info btn-lg mt-5">
           ABOUT US
         </Link>
       </div>
@@ -76,94 +86,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section class="portfolio">
-        <div class="container text-center ">
-          <h3>LATEST BLOGS</h3>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12 d-block m-auto">
-              <div class="card">
-                <img
-                  src={blog1}
-                  class="card img-fluid"
-                  alt=""
-                  style={{ width: "290px", height: "250px" }}
-                />
-                <div class="card body ">
-                  <h5 class="card-title">
-                    Recycling of e-waste in India and its potential
-                  </h5>
-                  <p class="card-text text-left">
-                    Electronic waste (e-waste) typically includes discarded
-                    computer monitors, motherboards, mobile phones and chargers,
-                    compact discs, headphones, television sets, air conditioners
-                    and refrigerators. According to the Global E-Waste Monitor
-                    2017, India generates about 2 million tonnes (MT) of e-waste
-                    annually and ranks fifth among e-waste producing countries,
-                    after the US, China, Japan and Germany.In 2016-17.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-              <div class="card">
-                <img
-                  src={blog2}
-                  class="card img-fluid"
-                  alt=""
-                  style={{ width: "290px", height: "250px" }}
-                />
-                <div class="card body">
-                  <h5 class="card-title">
-                    How E-Waste Is Harmful to Your Health ?
-                  </h5>
-                  <p class="card-text text-left">
-                    The toxic components in e-waste have the ability to damage
-                    almost every system in the human body: the nervous system,
-                    reproductive system and skeletal system, as well as the
-                    brain, heart, liver and kidneys, and also causes birth
-                    defects. Exposure to improperly disposed of chlorine causes
-                    the destruction of cell structure and tissue damage. Cadmium
-                    is found in cell phone batteries and can cause kidney
-                    damage.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
-              <div class="card">
-                <img
-                  src={blog3}
-                  class="card img-fluid"
-                  alt=""
-                  style={{ width: "290px", height: "250px" }}
-                />
-                <div class="card body">
-                  <h5 class="card-title">
-                    8 Reasons To Recycle Your Old Home Appliance
-                  </h5>
-                  <p class="card-text text-left">
-                    These are the 8 main reasons:-
-                    <ul>
-                      <li>Dangerous effects of non-recycled electronics</li>
-                      <li>Recycling electronics is easier now</li>
-                      <li>Data Destruction can be securely performed</li>
-                      <li>Get precious metals out of your e-waste</li>
-                      <li>Haphazard disposition is illegal</li>
-
-                      <li>Recycling old gadgets could save money</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section>
-        <div style={{ color: "black" }} class="text-center p-1">
+        <div class="text-center p-1">
           <br />
           <h3 color="blue">We Are Currently Working In These Cities</h3>
           <br />

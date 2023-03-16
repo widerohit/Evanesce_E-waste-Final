@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../../css/forget.css";
 import base_url from "../../api/bootapi.js";
 import axios from "axios";
 import swal from "sweetalert2";
@@ -164,8 +163,19 @@ function Forget() {
       e.preventDefault();
     }
   };
+
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
-    <div className="forget_bg-img">
+    <div style={divStyle}>
       <div class="container vh-100" style={{ width: "50%" }}>
         <div class="row d-flex justify-content-center">
           <div class="col-md-12">

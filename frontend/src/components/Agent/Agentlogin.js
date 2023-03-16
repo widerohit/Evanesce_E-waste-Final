@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../../css/agent.css";
-import agent_img from "../../images/agentlogin.PNG";
 import { Link } from "react-router-dom";
 import base_url from "../../api/bootapi.js";
 import axios from "axios";
@@ -52,16 +51,21 @@ function Agentlogin() {
       }
     );
   };
-
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
   return (
-    <div className="agent-img">
-      <div className="vh-100 d-flex">
-        <div className="container w-50 m-auto log">
-          <div className="row">
-            <div className="col-lg-5 p-0">
-              <img src={agent_img} alt="" className="w-150 ag-img" />
-            </div>
-            <div className="col-lg-7">
+    <div style={divStyle}>
+      <div>
+        <div>
+          <div>
+            <div>
               <div className="m-auto w-75 pt-5 pb-5 align-text-center ">
                 <h3 class="center aligned header">Agent Login</h3>
 

@@ -10,11 +10,12 @@ function Adminnav() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-md bg-white navbar fixed-top p-2">
+      <nav className="navbar navbar-expand-md bg-dark navbar fixed-top p-2">
         <div className="container-fluid">
-          <img src={logo} alt="" style={{ height: "60px", width: "150px" }} />
           <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <h3 className="navbar-brand font-weight-bold">Admin Panel</h3>
+          <h3 className="navbar-brand text-white font-weight-bold">
+            Admin Panel
+          </h3>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,14 +25,14 @@ function Adminnav() {
             <span classNameName="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse text-dark text-center"
+            className="collapse navbar-collapse text-white text-center"
             id="collapsenavbar"
           >
             <ul className="navbar-nav ml-auto ">
               <li className="nav-item ms-3">
                 <Link
                   to="/admin"
-                  style={{ color: "black", textDecoration: "none" }}
+                  style={{ color: "white", textDecoration: "none" }}
                   classNameName="nav-link "
                 >
                   Pending Requests
@@ -41,7 +42,7 @@ function Adminnav() {
               <li className="nav-item ms-3">
                 <Link
                   to="/adminview"
-                  style={{ color: "black", textDecoration: "none" }}
+                  style={{ color: "white", textDecoration: "none" }}
                   classNameName="nav-link "
                 >
                   Collected Donations
@@ -50,7 +51,7 @@ function Adminnav() {
               <li className="nav-item ms-5">
                 <Link
                   to="/adminusers"
-                  style={{ color: "black", textDecoration: "none" }}
+                  style={{ color: "white", textDecoration: "none" }}
                   classNameName="nav-link "
                 >
                   View Users
@@ -59,7 +60,7 @@ function Adminnav() {
               <li className="nav-item ms-5">
                 <Link
                   to="/Hireagent"
-                  style={{ color: "black", textDecoration: "none" }}
+                  style={{ color: "white", textDecoration: "none" }}
                   classNameName="nav-link text-black font-weight-bold "
                 >
                   Hire Agent
@@ -68,7 +69,7 @@ function Adminnav() {
               <li className="nav-item ms-5">
                 <Link
                   to="/Adminagents"
-                  style={{ color: "black", textDecoration: "none" }}
+                  style={{ color: "white", textDecoration: "none" }}
                   classNameName="nav-link text-black font-weight-bold"
                 >
                   View Agents

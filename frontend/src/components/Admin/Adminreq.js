@@ -3,7 +3,6 @@ import Admincard from "./Admincard";
 import base_url from "../../api/bootapi.js";
 import swal from "sweetalert2";
 import axios from "axios";
-import "../../css/carddesign.css";
 import "../../css/admin.css";
 
 function Adminreq() {

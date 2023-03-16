@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../../css/register.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert2";
 import base_url from "../../api/bootapi.js";

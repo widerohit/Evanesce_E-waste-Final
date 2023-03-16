@@ -14,7 +14,7 @@ function UserNavbar() {
   };
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <img src={logo} alt="" style={{ height: "60px", width: "150px" }} />
 
@@ -32,7 +32,7 @@ function UserNavbar() {
               <li class="nav-item  ms-4 mt-1 fs-50">
                 <Link
                   to="/home"
-                  className="nav-link text-black font-weight-bold"
+                  className="nav-link text-white font-weight-bold"
                 >
                   Home
                 </Link>
@@ -41,14 +41,14 @@ function UserNavbar() {
               <li class="nav-item  ms-4 mt-1 fs-50">
                 <Link
                   to="/donate"
-                  className="nav-link text-black font-weight-bold"
+                  className="nav-link text-white font-weight-bold"
                 >
                   Donate
                 </Link>
               </li>
 
               <li class="nav-item ms-4 mt-1 fs-50">
-                <Link to="/view" class="nav-link text-black font-weight-bold">
+                <Link to="/view" class="nav-link text-white font-weight-bold">
                   Pending Donations
                 </Link>
               </li>
@@ -56,7 +56,7 @@ function UserNavbar() {
               <li class="nav-item  ms-4 mt-1 fs-50">
                 <Link
                   to="/donations"
-                  class="nav-link text-black font-weight-bold"
+                  class="nav-link text-white font-weight-bold"
                 >
                   View Donations
                 </Link>
@@ -65,7 +65,7 @@ function UserNavbar() {
               <li class="nav-item  ms-4 mt-1 fs-50">
                 <Link
                   to="/userprofile"
-                  class="nav-link text-black font-weight-bold"
+                  class="nav-link text-white font-weight-bold"
                 >
                   Profile
                 </Link>
@@ -81,8 +81,8 @@ function UserNavbar() {
             </ul>
           </div>
         </div>
-        <div className="nav-link text-black font-weight-bold">
-          <h6 className="text-black ">
+        <div className="nav-link text-white font-weight-bold">
+          <h6 className="text-white ">
             Welcome
             <br />
             <span>{name}</span>

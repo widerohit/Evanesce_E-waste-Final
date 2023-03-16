@@ -58,9 +58,17 @@ function Login() {
       }
     );
   };
-
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
   return (
-    <div class="login-img">
+    <div style={divStyle}>
       <div className="vh-150 d-flex">
         <div>
           <div className="row">
@@ -73,10 +81,8 @@ function Login() {
                 />
                 <br></br>
                 <br></br>
-                <h3 class="text-black mb-4">
-                  Perfect Solution To Your E-Waste
-                </h3>
-                <h5 style={{ color: "black" }}>
+                <h3 class="mb-4">Perfect Solution To Your E-Waste</h3>
+                <h5>
                   Evansece E-waste is an India's most loved and leading
                   professional E-waste Management Company that has set industry
                   benchmarks time and again with its innovative & environment
@@ -86,12 +92,7 @@ function Login() {
             </div>
             <div className="col-lg-6">
               <div className="m-auto w-75 pt-5 pb-5 align-self-center ">
-                <h1
-                  className="text-center fw-bolder mb-3"
-                  style={{ color: "green" }}
-                >
-                  Evanesce E-Waste
-                </h1>
+                <h1 className="text-center fw-bolder mb-3">Evanesce E-Waste</h1>
                 <h3
                   style={{ fontWeight: "bold" }}
                   className="text-center bold display-6"
