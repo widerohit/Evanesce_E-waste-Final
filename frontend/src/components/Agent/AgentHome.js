@@ -136,10 +136,18 @@ function AgentHome() {
         }
       });
   };
-
+ const divStyle = {
+   backgroundColor: "#282c34", // Set to a dark color value
+   color: "white", // Set the font color to a contrasting color
+   minHeight: "100vh",
+   display: "flex",
+   flexDirection: "column",
+   alignItems: "center",
+   justifyContent: "center",
+ };
   const [requests, setRequests] = useState([]);
   return (
-    <div className="pt-5 agent-img">
+    <div style={divStyle} className="pt-5 agent-img">
       <div className=" vh-100">
         <div class="card">
           <h5 class="card-header text-center txt-decor">All Requests</h5>

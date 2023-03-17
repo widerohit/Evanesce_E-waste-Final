@@ -16,7 +16,7 @@ function UserNavbar() {
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <img src={logo} alt="" style={{ height: "60px", width: "150px" }} />
+         <h4 class="text-white" >User Dashboard</h4>
 
           <button
             class="navbar-toggler"

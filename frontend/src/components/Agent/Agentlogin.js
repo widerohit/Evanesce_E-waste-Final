@@ -66,8 +66,11 @@ function Agentlogin() {
         <div>
           <div>
             <div>
-              <div className="m-auto w-75 pt-5 pb-5 align-text-center ">
-                <h3 class="center aligned header">Agent Login</h3>
+              <div className="m-auto w-50 pt-5 pb-5 align-text-center ">
+                <h3 class="center aligned header">
+                  {" "}
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agent Login
+                </h3>
 
                 <form onSubmit={handlerForm} className="row g-3 mt-3">
                   <div className="col-md-12">

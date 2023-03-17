@@ -13,14 +13,24 @@ function Agentprofile() {
     }
   }, []);
 
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
-    <div class="profile-bg">
+    <div style={divStyle} class="profile-bg">
       <div class="container  w-50">
         <div class="row d-flex justify-content-center mt-2">
           <div class="col-md-8 mt-5 pt-5">
             <div class=" z-depth-3">
               <div class="col-sm-12  rounded-left rounded-right p-bg">
-                <div class="card-block text-center text-white">
+                <div class="card-block text-center text-dark">
                   <i class="fas fa-id-card fa-5x mt-3 mb-3"></i>
                 </div>
               </div>
@@ -30,7 +40,7 @@ function Agentprofile() {
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 ">
             <div class=" z-depth-3">
-              <div class="col-sm-12 bg-white rounded-left rounded-right pb-7">
+              <div class="col-sm-12 bg-dark rounded-left rounded-right pb-7">
                 <h4 class=" p-2 text-center font-weight-bold">
                   <b>Profile Details</b>
                 </h4>

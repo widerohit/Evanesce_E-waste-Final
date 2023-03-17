@@ -67,7 +67,7 @@ const Viewcard = ({ request }) => {
   };
 
   return (
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="text-dark col-xs-12 col-sm-6 col-md-3">
       <div class="container mar">
         <div
           class="card mb-4  viewcard_bg"

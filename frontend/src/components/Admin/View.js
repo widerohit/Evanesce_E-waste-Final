@@ -45,16 +45,26 @@ const View = () => {
   const [requests, setRequests] = useState([]);
   console.log(requests);
 
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  };
+
   return (
-    <div className="min-vh-350 view_bg">
-      <div class="card-deck row">
-        {requests.length > 0 ? (
-          requests.map((item) => <Viewcard request={item} />)
-        ) : (
-          <div className="gify">
-            <img src={gify} alt="" height="600" width="600" />
-          </div>
-        )}
+    <div style={divStyle}>
+      <div className="min-vh-350 view_bg">
+        <div class="card-deck row">
+          {requests.length > 0 ? (
+            requests.map((item) => <Viewcard request={item} />)
+          ) : (
+            <div className="gify">
+              <img src={gify} alt="" height="600" width="600" />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

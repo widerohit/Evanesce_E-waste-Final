@@ -11,11 +11,11 @@ function AgentNavBar() {
   };
   return (
     <div>
-      <nav class="navbar navbar-expand-md bg-white navbar-dark fixed-top p-2">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top p-2">
         <div class="container">
-          <img src={logo} alt="" style={{ height: "60px", width: "150px" }} />
+     
           <Link
-            class="navbar-brand text-dark fs-3 font-weight-bold ps-5"
+            class="navbar-brand text-white fs-3 font-weight-bold ps-5"
             to="/agenthome"
           >
             Agent Dashboard
@@ -33,7 +33,7 @@ function AgentNavBar() {
           <div class="collapse navbar-collapse text-center" id="collapsenavbar">
             <ul class="navbar-nav ml-auto ">
               <li class="nav-item fs-5 pe-3">
-                <Link to="/agentprofile" class="nav-link text-dark">
+                <Link to="/agentprofile" class="nav-link text-white">
                   PROFILE
                 </Link>
               </li>

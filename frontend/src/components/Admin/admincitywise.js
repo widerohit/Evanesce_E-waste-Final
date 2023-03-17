@@ -47,10 +47,17 @@ function AgentsCityWise() {
   };
 
   const [cityagents, setCityAgents] = useState([]);
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    display: "flex",
+    flexDirection: "column",
+  };
+
   return (
-    <div class="min-vh-100 mt-5 ">
+    <div style={divStyle} class="min-vh-100 mt-5 ">
       <div class="container mt-5 pt-5">
-        <h1 className=" mb-3 text-center text-dark fw-bold">
+        <h1 className=" mb-3 text-center text-white fw-bold">
           {sessionStorage.getItem("city_request")}
         </h1>
         <div class="card">

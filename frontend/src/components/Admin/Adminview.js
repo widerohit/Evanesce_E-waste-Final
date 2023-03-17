@@ -91,11 +91,19 @@ function Adminview() {
     showTotal: true,
     alwaysShowAllBtns: true,
   });
+
+   const divStyle = {
+     backgroundColor: "#282c34", // Set to a dark color value
+     color: "white", // Set the font color to a contrasting color
+     display: "flex",
+     flexDirection: "column",
+   };
+
   return (
-    <div style={{ textAlign: "center" }} className="min-vh-100 admin-bg ">
+    <div style={divStyle} className="min-vh-100 admin-bg ">
       <div class="container mt-5 pt-3 ">
         <div class="card card-bg">
-          <h4 class="card-header txt-deco">Collections</h4>
+          <h4 class="card-header txt-deco text-dark">Collections</h4>
           <div class="card-body bt">
             <BootstrapTable
               bootstrap4

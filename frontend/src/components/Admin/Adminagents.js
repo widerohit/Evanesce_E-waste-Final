@@ -84,6 +84,7 @@ function Adminagents() {
             text: "There Are No Agents Registered",
             icon: "error",
             button: "Ok",
+            background: "black",
           });
         }
         console.log(agents);
@@ -116,13 +117,20 @@ function Adminagents() {
     },
   ];
 
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    display: "flex",
+    flexDirection: "column",
+  };
+
   const [agents, setAgents] = useState([]);
   console.log(agents);
   return (
-    <div className="min-vh-100 admin-bg ">
-      <div class="container mt-10 pt-30 ">
+    <div style={divStyle} className="min-vh-100  ">
+      <div class="container mt-5 pt-5 ">
         <div class="card card-bg">
-          <h4 class="card-header txt-deco">All Agents</h4>
+          <h4 class="card-header txt-deco text-dark">All Agents</h4>
           <div style={{ textAlign: "center" }} class="card-body bt">
             <BootstrapTable
               bootstrap4

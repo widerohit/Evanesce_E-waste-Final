@@ -80,7 +80,7 @@ function Adminusers() {
     { dataField: "city", text: "City", sort: true, filter: textFilter() },
     { dataField: "phone", text: "Phone", sort: true, filter: textFilter() },
     { dataField: "email", text: "E-mail", filter: textFilter() },
-    { dataField: "admin", text: "Admin" },
+    { dataField: "role", text: "Role", sort: true, filter: textFilter() },
     {
       text: "Action",
       formatter: (cell, row) => (
@@ -115,14 +115,19 @@ function Adminusers() {
       }
     );
   };
-
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    display: "flex",
+    flexDirection: "column",
+  };
   const [users, setUsers] = useState([]);
   console.log(users);
   return (
-    <div class="min-vh-100 mt-5 admin-bg">
+    <div style={divStyle} class="min-vh-100 mt-5 admin-bg">
       <div class="container mt-5 pt-3 ">
         <div class="card card-bg">
-          <h4 class="card-header txt-deco">All Users</h4>
+          <h4 class="card-header txt-deco text-dark">All Users</h4>
           <div style={{ textAlign: "center" }} class="card-body bt">
             <BootstrapTable
               bootstrap4

@@ -51,22 +51,31 @@ function Adminreq() {
     return requestitem.city.toLowerCase().includes(searchfield.toLowerCase());
   });
 
-  return (
-    <div class="min-vh-100 mt-5 admin-bg">
-      <div class="container">
-        <input
-          type="text"
-          class="any"
-          onChange={onSearchChange}
-          placeholder="Sort City Wise"
-        />
+  const divStyle = {
+    backgroundColor: "#282c34", // Set to a dark color value
+    color: "white", // Set the font color to a contrasting color
+    display: "flex",
+    flexDirection: "column",
+  };
 
-        <div class="card-deck row">
-          {requests.length > 0 ? (
-            filteredRequests.map((item) => <Admincard request={item} />)
-          ) : (
-            <h2 className="text-center m-5 p-5">No request cards</h2>
-          )}
+  return (
+    <div style={divStyle}>
+      <div class="min-vh-100 mt-5 admin-bg">
+        <div class="container">
+          <input
+            type="text"
+            class="any"
+            onChange={onSearchChange}
+            placeholder="Sort City Wise"
+          />
+
+          <div class="card-deck row">
+            {requests.length > 0 ? (
+              filteredRequests.map((item) => <Admincard request={item} />)
+            ) : (
+              <h2 className="text-center m-5 p-5">No request cards</h2>
+            )}
+          </div>
         </div>
       </div>
     </div>

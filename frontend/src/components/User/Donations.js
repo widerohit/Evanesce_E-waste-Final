@@ -47,11 +47,11 @@ const Donations = () => {
 
   return (
     <div>
-      <div class="bgimg">
-        <h1 className="text-center text-dark display-7 pt-5 mt-2 fw-bold ">
+      <div>
+        <h1 className="text-center bg-dark text-white">
           <u>Donations</u>
         </h1>
-        <table className="table table-striped table-dark  m-auto mt-5 mb-5">
+        <table className="table table-striped table-dark  m-auto  mb-8">
           <thead>
             <tr className="fs-6">
               <th scope="col">Donation ID</th>

@@ -160,11 +160,20 @@ function Hireagent() {
     }
   };
 
+   const divStyle = {
+     backgroundColor: "#282c34", // Set to a dark color value
+     color: "white", // Set the font color to a contrasting color
+     minHeight: "100vh",
+     display: "flex",
+     flexDirection: "column",
+     alignItems: "center",
+     justifyContent: "center",
+   };
+
   return (
-    <div>
-      <div>
+    <div style={divStyle}>
         <div className="vh-100 d-flex hire-agent ">
-          <div className="m-auto w-25 pt-25 ps-5 pe-5 pb-15 align-self-center text-black hire-form">
+          <div className="m-auto w-25 pt-25 ps-5 pe-5 pb-15 align-self-center text-white hire-form">
             <form className="row g-3 mt-1">
               <div className="col-md-12">
                 <br></br>
@@ -272,7 +281,6 @@ function Hireagent() {
             </form>
           </div>
         </div>
-      </div>
     </div>
   );
 }
