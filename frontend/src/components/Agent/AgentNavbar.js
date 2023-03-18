@@ -13,7 +13,6 @@ function AgentNavBar() {
     <div>
       <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top p-2">
         <div class="container">
-     
           <Link
             class="navbar-brand text-white fs-3 font-weight-bold ps-5"
             to="/agenthome"
@@ -40,7 +39,7 @@ function AgentNavBar() {
 
               <li class="nav-item mt-2 ">
                 <form onSubmit={endSession} action="/">
-                  <button type="submit" class="btn btn-sm btn-primary">
+                  <button type="submit" class="btn btn-sm btn-warning">
                     <span className="fs-6 ">LOGOUT</span>
                   </button>
                 </form>

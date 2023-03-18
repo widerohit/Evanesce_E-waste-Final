@@ -52,7 +52,7 @@ function Register() {
             text: "Successfully Registered !",
           })
           .then(function () {
-            window.location = "/";
+            window.location = "/login";
           });
         clearFields();
       },
@@ -204,7 +204,7 @@ function Register() {
     } else if (usecurityAns.length <= 3 || usecurityAns.length > 40) {
       document.getElementById("securityAns").classList.add("is-invalid");
       setEsecurityAns("Enter Answer lenght above 2 or less than 40");
-    } else if (document.getElementById("tnc").checked == false) {
+    } else if (document.getElementById("tnc").checked === false) {
       document.getElementById("tnc").classList.add("is-invalid");
       setEtnc("Please accept terms and conditions");
     } else {
@@ -226,9 +226,7 @@ function Register() {
       <div>
         <div>
           <div className="m-auto w-50 pt-2 ps-5 pe-5 pb-2  ">
-            <h1 className="text-center fw-bold mb-6">
-              Evanesce E-Waste Register
-            </h1>
+            <h3 className="text-center fw-bold mb-6">Register</h3>
 
             <form className="row g-3 mt-1">
               <div className="col-md-6">
@@ -417,6 +415,7 @@ function Register() {
                 <Link
                   to="/termsandconditions"
                   href="#"
+                  target="_blank"
                   className="text-decoration-none fs-5"
                   id="tnc"
                 >
@@ -427,7 +426,7 @@ function Register() {
                 <h4 className="fs-4">
                   Already Registered ? &nbsp;
                   <Link
-                    to="/"
+                    to="/login"
                     href="login.html"
                     className="text-decoration-none"
                   >
@@ -439,7 +438,7 @@ function Register() {
               <div className="col-md-12 text-center">
                 <input
                   type="button"
-                  className="btn btn-lg btn-primary"
+                  className="btn btn-lg btn-success"
                   value="Register"
                   onClick={validate}
                 />

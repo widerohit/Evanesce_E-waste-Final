@@ -77,7 +77,7 @@ function Adminnav() {
               </li>
               <li className="nav-item  nav-logout">
                 <button
-                  className="btn btn-sm btn-primary ps-3 pe-3 p-2"
+                  className="btn btn-sm btn-dark ps-3 pe-3 p-2"
                   onClick={logoutAdmin}
                   type="submit"
                 >

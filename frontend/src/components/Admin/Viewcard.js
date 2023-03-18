@@ -132,7 +132,7 @@ const Viewcard = ({ request }) => {
             <div class="row">
               <div class="col-lg-6 text-right">
                 <Link
-                  class="btn btn-md btn-primary"
+                  class="btn btn-md btn-warning"
                   to="/update"
                   onClick={setID}
                 >
@@ -144,7 +144,7 @@ const Viewcard = ({ request }) => {
                 <form>
                   <button
                     type="button"
-                    class="btn btn-md btn-primary"
+                    class="btn btn-md btn-danger"
                     onClick={deleteReq}
                   >
                     Delete

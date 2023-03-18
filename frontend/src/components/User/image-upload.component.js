@@ -18,11 +18,11 @@ export default function App({ reqdetails }) {
       .substr(idxDot, selectedFile.name.length)
       .toLowerCase();
     if (
-      extFile == "jpg" ||
-      extFile == "jpeg" ||
-      extFile == "png" ||
-      extFile == "svg" ||
-      extFile == "gif"
+      extFile === "jpg" ||
+      extFile === "jpeg" ||
+      extFile === "png" ||
+      extFile === "svg" ||
+      extFile === "gif"
     ) {
       //do whatever want to do
       const dataArray = new FormData();

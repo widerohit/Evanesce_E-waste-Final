@@ -242,7 +242,7 @@ const Insert = () => {
             <input
               type="button"
               value="Donate"
-              className="btn btn-primary btn-lg ps-5 pe-5 p-3"
+              className="btn btn-success btn-lg ps-5 pe-5 p-3"
               onClick={validate}
             />
           </div>

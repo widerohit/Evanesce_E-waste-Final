@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
 import swal from "sweetalert2";
-import base_url from "../../api/bootapi.js";
 
 function Admincolcard({ request }) {
   const [confirm, setConfirm] = useState({

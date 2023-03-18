@@ -18,12 +18,7 @@ import intro from "../../video/Intro.mp4";
 import Carousel from "react-bootstrap/Carousel";
 
 function Home() {
-  useEffect(() => {
-    document.title = "Home";
-    if (sessionStorage.getItem("userSession") == null) {
-      window.location = "/";
-    }
-  }, []);
+
 
   const divStyle = {
     backgroundColor: "#282c34", // Set to a dark color value

@@ -1,9 +1,15 @@
-import React from "react";
+import { React, useEffect } from "react";
 import "../../css/home.css";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo2.jpg";
 
 function UserNavbar() {
+  useEffect(() => {
+    document.title = "Home";
+    if (sessionStorage.getItem("userSession") == null) {
+      window.location = "/";
+    }
+  }, []);
+
   const name = sessionStorage.getItem("username");
   const endSession = () => {
     sessionStorage.removeItem("userSession");
@@ -16,7 +22,9 @@ function UserNavbar() {
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-         <h4 class="text-white" >User Dashboard</h4>
+          <h4 class="text-white">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Dashboard
+          </h4>
 
           <button
             class="navbar-toggler"
@@ -73,7 +81,7 @@ function UserNavbar() {
 
               <li class="nav-item  nav-logout mt-2 ">
                 <form onSubmit={endSession} action="/">
-                  <button type="submit" class="btn btn-sm btn-primary">
+                  <button type="submit" class="btn btn-sm btn-dark">
                     <span className="fs-8 ">Logout</span>
                   </button>
                 </form>

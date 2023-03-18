@@ -24,6 +24,7 @@ function Agentlogin() {
             icon: "error",
             title: "Oops...",
             text: "Wrong Credentials Entered or you have not registered yet.",
+            background: "black",
           });
         } else {
           sessionStorage.setItem("username", response.data.name);
@@ -46,7 +47,8 @@ function Agentlogin() {
         swal.fire({
           icon: "error",
           title: "Oh no!",
-          text: "Wrong Credentials",
+          text: "Server Error",
+          background: "black",
         });
       }
     );
@@ -72,7 +74,7 @@ function Agentlogin() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agent Login
                 </h3>
 
-                <form onSubmit={handlerForm} className="row g-3 mt-3">
+                <form onSubmit={handlerForm} className="center row g-3 mt-3">
                   <div className="col-md-12">
                     <label for="email" class="form-label fs-5">
                       Email-ID
@@ -108,7 +110,7 @@ function Agentlogin() {
                   <div class="col-md-12 text-center">
                     <button
                       type="submit"
-                      class="btn btn-lg btn-primary ps-5 pe-5 p-2  mb-2"
+                      class="btn btn-md btn-secondary ps-5 pe-5 p-2  mb-2"
                     >
                       Login
                     </button>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Terms() {
   return (
-    <div>
+    <div class="bg-dark text-white">
       <div class="bg-dark text-right p-2 row">
         <div class="col-lg-8">
           <h4 class="text-white me-5 pe-5 fw-bold">Terms and Conditions</h4>
@@ -19,11 +19,11 @@ function Terms() {
       </div>
 
       <div>
-        <nav class="mr-md-5 ml-md-5 mb-1 mt-5 display-6 text-center">
+        <nav class=" mr-md-5 ml-md-5 mb-1 mt-5 display-6 text-center">
           General Terms To Use
         </nav>
         <br />
-        <div class="mr-md-5 ml-md-5 ">
+        <div class="  mr-md-5 ml-md-5 ">
           <ol>
             <li>
               Evanesce E-Waste is committed to bringing best of service to each
@@ -98,7 +98,7 @@ function Terms() {
           Evanesce E-Waste Disclaimer
         </nav>
         <br />
-        <div class=" mr-md-5 ml-md-5 mb-5 ">
+        <div class="text-white mr-md-5 ml-md-5 mb-5 ">
           <ol>
             <li>
               <b>Disclaimer of Endorsement :</b>

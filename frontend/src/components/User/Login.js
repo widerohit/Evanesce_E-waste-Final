@@ -156,7 +156,7 @@ function Login() {
                   <div class="col-md-12 text-center">
                     <button
                       type="submit"
-                      class="btn btn-lg btn-primary ps-5 pe-5 p-2  mb-2"
+                      class="btn btn-lg btn-secondary ps-5 pe-5 p-2  mb-2"
                     >
                       Login
                     </button>

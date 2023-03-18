@@ -27,7 +27,7 @@ const Donationcard = ({ request }) => {
 
       <td>
         {load ? (
-          <img src={imgurl} id="preview" width="200" height="100" />
+          <img src={setImgUrl} id="preview" width="200" height="100" />
         ) : (
           <button class="btn btn-xs btn-info" onClick={fetchImages}>
             Show Image

@@ -8,7 +8,7 @@ import "../../css/admin.css";
 function Adminreq() {
   useEffect(() => {
     document.title = "View Requests";
-    if (sessionStorage.getItem("admin") != "admin") {
+    if (sessionStorage.getItem("admin") !== "admin") {
       window.location = "/";
     }
     viewAllRequests();

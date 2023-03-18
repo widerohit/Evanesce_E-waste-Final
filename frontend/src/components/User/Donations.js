@@ -46,9 +46,9 @@ const Donations = () => {
   const [requests, setRequests] = useState([]);
 
   return (
-    <div>
+    <div className="text-center bg-dark text-white">
       <div>
-        <h1 className="text-center bg-dark text-white">
+        <h1>
           <u>Donations</u>
         </h1>
         <table className="table table-striped table-dark  m-auto  mb-8">
