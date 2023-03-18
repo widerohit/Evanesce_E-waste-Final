@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
 //User Pages
 import Register from "./components/User/Register";
 import Terms from "./components/User/Terms";
@@ -35,6 +36,16 @@ function App() {
       <Route
         exact
         path="/"
+        element={
+          <div>
+            <Navbar></Navbar>
+            <Home></Home>
+          </div>
+        }
+      ></Route>
+      <Route
+        exact
+        path="/login"
         element={
           <div>
             <Login></Login>
